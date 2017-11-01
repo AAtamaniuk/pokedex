@@ -3,22 +3,74 @@
   margin-bottom: 15px;
   cursor: pointer;
   border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 3px 10px,
+              rgba(0, 0, 0, 0.23) 0 3px 10px;
 }
 
-.PokeItem__img {
-  
+.PokeItem:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0 19px 60px,
+              rgba(0, 0, 0, 0.22) 0 15px 20px;
+}
+
+.PokeItem:active {
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 6px,
+              rgba(0, 0, 0, 0.12) 0 1px 4px;
+}
+
+.PokeItem:hover .PokeItem__title {
+  color: #f25c05;
+}
+
+.PokeItem__img-wrapper {
+  margin-bottom: 15px;
+  background-color: #607D8B;
+  border-radius: 3px 3px 0 0;
 }
 
 .PokeItem__number {
-  
+  font-weight: bold;
+  color: #757575;
 }
 
 .PokeItem__title {
-  display: inline-block;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 20px;
   font-size: 20px;
   color: #313131;
   font-weight: bold;
   text-transform: capitalize;
+}
+
+.PokeItem__type {
+  display: inline-block;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  border-radius: 3px;
+  font-weight: bold;
+  color: #313131;
+}
+
+.PokeItem__type--poison {
+  background-color: #e33cff;
+}
+
+.PokeItem__type--grass {
+  background-color: #8BC34A;
+}
+
+.PokeItem__type--fire {
+  background-color: #FF5722;
+}
+
+.PokeItem__type--flying {
+  background-color: #2196f3;
+}
+
+.PokeItem__type--water {
+  background-color: #5d76ff;
+}
+
+.PokeItem__type--bug {
+  background-color: #00ff3b;
 }
