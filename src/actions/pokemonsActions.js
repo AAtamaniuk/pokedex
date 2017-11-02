@@ -28,7 +28,6 @@ export function fetchPokemons(arr, dispatch) {
     arr.map(item => requestsArr.push(axios.get(item.url)));
     axios.all(requestsArr)
       .then(response => {
-        console.log(response);
         const pokemons = [];
         response.map(item => pokemons.push(item.data));
         dispatch({type: FETCH_POKEMONS_SUCCESS,  payload: pokemons});

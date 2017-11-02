@@ -4,7 +4,7 @@ import { formatNumber } from '../../../helpers/formatNumber';
 // Styles
 import './PokeItem.css';
 
-const PokeItem = ({pokemon}) => {
+const PokeItem = ({pokemon, handleClick}) => {
   const renderPokeTypes = (types) => {
     return (
       types.map(item => {
@@ -17,7 +17,7 @@ const PokeItem = ({pokemon}) => {
   const { types, name, id, sprites } = pokemon;
   const { front_default } = sprites;
   return (
-    <div className='PokeItem'>
+    <div className='PokeItem' onClick={handleClick} role='button'>
       <div className='PokeItem__img-wrapper'>
         <img className='PokeItem__img' src={front_default} alt={name}/>
       </div>
