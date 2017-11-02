@@ -1,0 +1,13 @@
+.Error {
+  display: flex;
+  height: calc(100vh - 50px);
+  align-items: center;
+  justify-content: center;
+}
+
+.Error__text {
+  font-size: 20px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+

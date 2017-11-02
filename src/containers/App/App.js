@@ -7,6 +7,7 @@ import { Col, Container, Row } from 'react-grid-system';
 import { Header } from '../../components/common/Header';
 import { PokeItem } from '../../components/common/PokeItem';
 import { Loading } from '../../components/common/Loading';
+import { Error } from '../../components/common/Error';
 // Styles
 import './App.css';
 
@@ -38,7 +39,7 @@ class App extends Component {
     } else if (fetching === true) {
       content = <Loading/>
     } else {
-      content = <h1>Error</h1>
+      content = <Error/>
     }
     return (
       <div className="App">

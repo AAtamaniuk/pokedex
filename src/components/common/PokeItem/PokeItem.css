@@ -36,9 +36,9 @@
   margin-top: 0;
   margin-bottom: 20px;
   font-size: 20px;
-  color: #313131;
   font-weight: bold;
   text-transform: capitalize;
+  letter-spacing: 0.05em;
 }
 
 .PokeItem__type {
@@ -48,7 +48,7 @@
   margin-right: 5px;
   border-radius: 3px;
   font-weight: bold;
-  color: #313131;
+  letter-spacing: 0.05em;
 }
 
 .PokeItem__type--poison {
@@ -73,4 +73,8 @@
 
 .PokeItem__type--bug {
   background-color: #00ff3b;
+}
+
+.PokeItem__type--normal {
+  background-color: #757575;
 }

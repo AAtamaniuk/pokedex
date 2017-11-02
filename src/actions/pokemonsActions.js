@@ -11,7 +11,7 @@ import axios from 'axios';
 export function fetchList() {
   return (dispatch) => {
       dispatch({type: FETCH_LIST_START});
-      axios.get('https://pokeapi.co/api/v2/pokemon/?limit=12&offset=0')
+      axios.get('https://pokeapi.co/api/v2/pokemon/?limit=24&offset=0')
         .then(response => {
           const { results } = response.data;
           dispatch({type: FETCH_LIST_SUCCESS, payload: results});

@@ -15,6 +15,7 @@
 .Loading__text {
   font-size: 20px;
   margin-top: 15px;
+  font-weight: bold;
 }
 
 @keyframes blink {
