@@ -3,18 +3,15 @@
   margin-bottom: 15px;
   cursor: pointer;
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0 3px 10px,
-              rgba(0, 0, 0, 0.23) 0 3px 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 3px 10px, rgba(0, 0, 0, 0.23) 0 3px 10px;
 }
 
 .PokeItem:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 0 19px 60px,
-              rgba(0, 0, 0, 0.22) 0 15px 20px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 19px 60px, rgba(0, 0, 0, 0.22) 0 15px 20px;
 }
 
 .PokeItem:active {
-  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 6px,
-              rgba(0, 0, 0, 0.12) 0 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 6px, rgba(0, 0, 0, 0.12) 0 1px 4px;
 }
 
 .PokeItem:hover .PokeItem__title {
@@ -23,7 +20,7 @@
 
 .PokeItem__img-wrapper {
   margin-bottom: 15px;
-  background-color: #607D8B;
+  background-color: #607d8b;
   border-radius: 3px 3px 0 0;
 }
 
@@ -56,11 +53,11 @@
 }
 
 .PokeItem__type--grass {
-  background-color: #8BC34A;
+  background-color: #8bc34a;
 }
 
 .PokeItem__type--fire {
-  background-color: #FF5722;
+  background-color: #ff5722;
 }
 
 .PokeItem__type--flying {

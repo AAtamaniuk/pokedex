@@ -1,19 +1,18 @@
-import React from 'react';
-import { Container } from 'react-grid-system';
+import React from 'react'
+import { Container } from 'react-grid-system'
 // Components
-import { Logo } from '../Logo/index';
+import { Logo } from '../Logo/index'
 // Style
-import './Header.css';
-
+import './Header.css'
 
 const Header = () => {
   return (
     <header className='Header'>
       <Container>
-        <Logo/>
+        <Logo />
       </Container>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

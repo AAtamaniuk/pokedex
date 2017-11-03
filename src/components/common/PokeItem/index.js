@@ -1,1 +1,1 @@
-export { default as PokeItem } from './PokeItem';
+export { default as PokeItem } from './PokeItem'

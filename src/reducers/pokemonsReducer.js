@@ -5,7 +5,7 @@ import {
   FETCH_POKEMONS_START,
   FETCH_POKEMONS_SUCCESS,
   FETCH_POKEMONS_ERROR
-} from '../actionConstants';
+} from '../actionConstants'
 
 const initialState = {
   fetching: false,
@@ -13,7 +13,7 @@ const initialState = {
   list: [],
   pokemons: [],
   error: null
-};
+}
 
 const pokemons = (state = initialState, action) => {
   switch (action.type) {
@@ -21,13 +21,13 @@ const pokemons = (state = initialState, action) => {
       return {
         ...state,
         fetching: true
-      };
+      }
     }
     case FETCH_LIST_SUCCESS: {
       return {
         ...state,
         list: action.payload
-      };
+      }
     }
     case FETCH_LIST_ERROR: {
       return {
@@ -35,13 +35,13 @@ const pokemons = (state = initialState, action) => {
         fetching: false,
         fetched: true,
         error: action.payload
-      };
+      }
     }
     case FETCH_POKEMONS_START: {
       return {
         ...state,
         fetching: true
-      };
+      }
     }
     case FETCH_POKEMONS_SUCCESS: {
       return {
@@ -49,7 +49,7 @@ const pokemons = (state = initialState, action) => {
         fetching: false,
         fetched: true,
         pokemons: action.payload
-      };
+      }
     }
     case FETCH_POKEMONS_ERROR: {
       return {
@@ -57,12 +57,12 @@ const pokemons = (state = initialState, action) => {
         fetching: false,
         fetched: true,
         error: action.payload
-      };
+      }
     }
     default: {
-      return state;
+      return state
     }
   }
-};
+}
 
-export default pokemons;
+export default pokemons

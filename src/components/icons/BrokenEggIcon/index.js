@@ -1,1 +1,1 @@
-export { default as BrokenEggIcon } from './BrokenEggIcon';
+export { default as BrokenEggIcon } from './BrokenEggIcon'
